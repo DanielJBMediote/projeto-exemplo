@@ -1,12 +1,13 @@
 package dao;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import bean.BoletimBean;
 
 public class BoletimDAO {
 	
-	private static List<BoletimBean> boletimList;
+	private static List<BoletimBean> boletimList = new ArrayList<BoletimBean>();
 	
 	public static List<BoletimBean> getBoletimList() {
 		return boletimList;

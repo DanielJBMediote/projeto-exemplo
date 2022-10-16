@@ -3,6 +3,10 @@ package view;
 public class ScreenView {
 	
 	public static void mostrarTexto(String texto) {
+		System.out.print(texto);
+	}
+
+	public static void mostrarTextoLn(String texto) {
 		System.out.println(texto);
 	}
 	
@@ -14,11 +18,16 @@ public class ScreenView {
 
 		System.out.println("4. Inserir nota em um Boletim existênte.");
 		System.out.println("5. Alterar nota de um Boletim existênte.");
-		System.out.println("5. Remover nota de um Boletim existênte.");
+		System.out.println("6. Remover nota de um Boletim existênte.");
 
-		System.out.println("6. Listar Boletims de uma Turma.");
-		System.out.println("7. Listar todos os Boletims.");
+		System.out.println("7. Listar Boletims de uma Turma.");
+		System.out.println("8. Listar todos os Boletims.");
 
-		System.out.println("8. Sair.");
+		System.out.println("9. Sair.");
+	}
+
+	public static void mostrarErro(String message) {
+		System.out.print("\nError");
+		System.err.println(message);
 	}
 }
